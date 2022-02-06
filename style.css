@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,200&display=swap');
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(14, 127, 202);
+    border-radius: 10px;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: rgba(8, 56, 78, 0.63);
+    border-radius: 10px;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: rgb(8, 81, 116);
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ------- home section ----------- */
+
+.home {
+    height: 100vh;
+    background: url(./assets/homeBg.jpg);
+    background-size: cover;
+}
+
+.nav-bar {
+    padding-right: 10%;
+    width: 30%;
+    float: right;
+}
+
+.nav-bar ul {
+    padding-top: 20px;
+    list-style: none;
+    display: flex;
+}
+
+.nav-bar ul li {
+    padding: 5px 20px 5px 20px;
+    margin: auto;
+}
+
+.nav-bar ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.active,
+.nav-bar ul li:hover {
+    background: linear-gradient(45deg, rgb(38, 123, 163), rgb(166, 217, 233));
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px -1.5px rgb(166, 217, 233);
+    font-family: 'Poppins', sans-serif;
+}
+
+.home-text {
+    padding-top: 50px;
+    color: white;
+    padding-left: 10%;
+}
+
+.container {
+    width: 50vw;
+    margin: 0 10% 0 10%;
+    padding-top: 100px;
+}
+
+.home-head {
+    padding: 0;
+    margin: 0;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.home-sub-head {
+    padding: 0;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.p-btn {
+    background: linear-gradient(45deg, rgb(38, 123, 163), rgb(166, 217, 233));
+    padding: 10px 35px 10px 35px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    color: rgb(4, 38, 66);
+    font-size: 1.3rem;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0px 0px 15px -2px rgb(166, 217, 233);
+}
+
+.p-btn:hover {
+    box-shadow: 0px 0px 20px -1px rgb(166, 217, 233);
+}
+
+.p-btn:active {
+    box-shadow: 0px 0px 20px -1px rgb(166, 217, 233);
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-bar {
+        display: none;
+    }
+    .home-head {
+        font-size: 2.5rem;
+    }
+    .container {
+        width: 75vw;
+    }
+}
+
+
+/* --------work section ---- */
+
+.box {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.item {
+    overflow: hidden;
+}
+
+.c-area {
+    height: 300px;
+    width: 400px;
+    overflow: hidden;
+}
+
+.item img {
+    width: 200%;
+}
+
+.box-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.hover-seen {
+    display: none;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0), rgba(8, 29, 36, 0.568));
+    width: 100%;
+    height: 100px;
+    z-index: 10;
+    position: relative;
+    bottom: 190px;
+    padding: 20px 0 0 10px;
+}
+
+.c-area:hover .hover-seen {
+    display: block;
+}
+
+.hover-button {
+    background: rgb(21, 141, 211);
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.hover-button:hover {
+    outline: 1px solid white;
+}
+
+.work {
+    padding-top: 50px;
+}
+
+h2 {
+    color: rgb(29, 113, 124);
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+}
+
+
+/* ---------contact------- */
+
+.contact-box {
+    margin: 50px;
+    padding: 50px 50px 50px 10%;
+    box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
+}
+
+.phone,
+.email {
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+}
+
+.circle-icon {
+    background: #a7d1f357;
+    color: rgb(72, 189, 235);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    padding: 20;
+    vertical-align: middle;
+    margin-right: 10%;
+    margin-top: 10px;
+}
+
+.circle-icon:hover {
+    transition: 0.5s;
+    background: rgb(72, 189, 235);
+    color: white;
+}
+
+.phone-text h3,
+.email-text h3 {
+    margin: 0px;
+    padding-top: 10;
+}
+
+.phone-text p,
+.email-text p {
+    margin: 0px;
+    padding: 0;
+}
+
+footer {
+    padding-top: 30px;
+    height: 100px;
+    color: white;
+    background: rgb(7, 63, 77);
+    justify-content: center;
+    text-align: center;
+}
+
+footer i {
+    color: rgba(167, 167, 167, 0.938);
+}
+
+footer i:hover {
+    color: rgb(255, 255, 255);
+}
